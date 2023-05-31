@@ -11,7 +11,7 @@
 import 'dart:math';
 
 main() {
-  List<int> list = [1,6,12,36,93];
+  List<int> list = [1,6,12,36,93, 92, 94, 91, 92];
 
   print("listin ən böyük elementi: ${biggestItem(list)}");
   print("listin ən kiçik elementi: ${smallestItem(list)}");
