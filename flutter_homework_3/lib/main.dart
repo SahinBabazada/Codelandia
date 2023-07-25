@@ -19,8 +19,6 @@ class MyApp extends StatelessWidget {
             elevation: 1,
             color: Colors.white,
             iconTheme: IconThemeData(color: Color.fromRGBO(40, 40, 40, 1))),
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
