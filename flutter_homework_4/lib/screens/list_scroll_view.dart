@@ -13,7 +13,7 @@ class ListScrollWidget extends StatelessWidget {
           icon: const Icon(FeatherIcons.navigation,
               color: Color.fromRGBO(0, 157, 224, 1)),
           style: const ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll<Color>(
+              backgroundColor: MaterialStatePropertyAll(
                   Color.fromRGBO(0, 157, 224, 0.08))),
           onPressed: () {},
         ),

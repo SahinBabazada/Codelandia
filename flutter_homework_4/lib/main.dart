@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_homework_4/screens/list_scroll_view.dart';
+import 'package:flutter_homework_4/screens/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ListScrollWidget()
+      home: HomeScreen()
     );
   }
 }
