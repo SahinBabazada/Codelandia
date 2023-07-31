@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    int currentPage = 0;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -19,8 +18,6 @@ class MyApp extends StatelessWidget {
             elevation: 1,
             color: Colors.white,
             iconTheme: IconThemeData(color: Color.fromRGBO(40, 40, 40, 1))),
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -37,7 +34,6 @@ class MyApp extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(children: [
-            //Story
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -51,7 +47,6 @@ class MyApp extends StatelessWidget {
                 (index) => Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    //HEADER POST
                     Row(
                       children: [
                         Container(
@@ -74,10 +69,8 @@ class MyApp extends StatelessWidget {
                             icon: const Icon(Icons.more_horiz))
                       ],
                     ),
-                    // Image post
                     Image.network(
                         "https://entrackr.com/storage/2022/10/Spacex.jpg"),
-                    //Footer post
                     Row(
                       children: [
                         IconButton(
@@ -149,42 +142,26 @@ class MyApp extends StatelessWidget {
             const Spacer(),
             IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.home,
-                    color: currentPage == 0
-                        ? const Color.fromRGBO(203, 73, 101, 1)
-                        : const Color.fromRGBO(40, 40, 40, 1))),
+                icon: const Icon(Icons.home,
+                    color: Color.fromRGBO(40, 40, 40, 1))),
             const Spacer(),
             IconButton(
-                onPressed: () {
-                  currentPage = 1;
-                },
-                icon: Icon(Icons.search,
-                    color: currentPage == 1
-                        ? const Color.fromRGBO(203, 73, 101, 1)
-                        : const Color.fromRGBO(40, 40, 40, 1))),
+                onPressed: () {},
+                icon: const Icon(Icons.search,
+                    color: Color.fromRGBO(40, 40, 40, 1))),
             const Spacer(),
             IconButton(
-                onPressed: () {
-                  currentPage = 2;
-                },
-                icon: Icon(Icons.add_a_photo_outlined,
-                    color: currentPage == 2
-                        ? const Color.fromRGBO(203, 73, 101, 1)
-                        : const Color.fromRGBO(40, 40, 40, 1))),
+                onPressed: () {},
+                icon: const Icon(Icons.add_a_photo_outlined,
+                    color: Color.fromRGBO(40, 40, 40, 1))),
             const Spacer(),
             IconButton(
-                onPressed: () {
-                  currentPage = 3;
-                },
-                icon: Icon(Icons.playlist_play,
-                    color: currentPage == 3
-                        ? const Color.fromRGBO(203, 73, 101, 1)
-                        : const Color.fromRGBO(40, 40, 40, 1))),
+                onPressed: () {},
+                icon: const Icon(Icons.playlist_play,
+                    color: Color.fromRGBO(40, 40, 40, 1))),
             const Spacer(),
             IconButton(
-              onPressed: () {
-                currentPage = 4;
-              },
+              onPressed: () {},
               icon: const CircleAvatar(
                 backgroundImage: NetworkImage(
                     "https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg"),
